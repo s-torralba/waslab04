@@ -2,8 +2,8 @@
 
 Students:
 
-* Surname_1, First_name_1
+* Torrralba, Sol
 
-* Surname_2, First_name_2
+* Bometón, Raúl
 
 Your deployed webapp at Fly.io|Heroku|... (task #6): <https://*********.***.***/>

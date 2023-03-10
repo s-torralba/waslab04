@@ -1,6 +1,14 @@
 class TweetsController < ApplicationController
-  before_action :set_tweet, only: %i[ show edit update destroy ]
+  before_action :set_tweet, only: %i[ show edit update destroy like]
 
+
+  def like
+    @tweet.likes = @tweet.likes + 1
+    @tweet.save
+    respond_to do |format|
+      format.html { redirect_to root_path }
+    end
+  end
   # GET /tweets or /tweets.json
   def index
     #@tweets = Tweet.all

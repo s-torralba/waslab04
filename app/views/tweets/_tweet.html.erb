@@ -13,5 +13,11 @@
     <strong>Created at:</strong>
     <%= tweet.created_at.strftime("%A %Y/%m/%d %H:%M")%>
   </p>
+  <p>
+    <strong>Likes: </strong>
+    <%= tweet.likes%>
+  </p>
+
+  <%= button_to 'Like this tweet', like_tweet_path(tweet), method: :put %>
   <hr>
 </div>

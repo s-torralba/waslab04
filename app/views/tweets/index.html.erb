@@ -1,14 +1,14 @@
-<p style="color: green"><%= notice %></p>
+<div style="background-color: #fef7f7;font-family:Arial,Helvetica,sans-serif;color:#444;font-size:12pt">
+  <p style="color: green"><%= notice %></p>
 
-<h1>Tweets</h1>
+  <h1 style="text-align: center;color:#600">Wall of Tweets</h1>
 
-<div id="tweets">
-  <% @tweets.each do |tweet| %>
-    <%= render tweet %>
-    <p>
-      <%= link_to "Show this tweet", tweet %>
-    </p>
-  <% end %>
+  <div id="tweets">
+    <% @tweets.each do |tweet| %>
+      <%= render tweet %>
+    <% end %>
+  </div>
+
+  <%= link_to "New tweet", new_tweet_path %>
+
 </div>
-
-<%= link_to "New tweet", new_tweet_path %>
